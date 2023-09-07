@@ -72,8 +72,12 @@ togglePause.addEventListener('click', () => {
 
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
+    console.log(e)
     const currentInputValue = document.getElementById('comment-input').value
+    console.log(currentInputValue)
+    const div = listElement 
     const p = document.createElement('p')
     p.innerHTML = currentInputValue
+    div.appendChild(p)
     let updatedP = document.getElementById('p')
 })
